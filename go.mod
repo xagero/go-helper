@@ -1,4 +1,4 @@
-module xagero/go-helper
+module github.com/xagero/go-helper
 
 go 1.22
 

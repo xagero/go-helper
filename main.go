@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"xagero/go-helper/helper"
+	"github.com/xagero/go-helper/helper"
 )
 
 func main() {
