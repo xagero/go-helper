@@ -1,22 +1,23 @@
-package helper
+package test
 
 import (
 	"github.com/stretchr/testify/assert"
+	"github.com/xagero/go-helper/helper"
 	"testing"
 )
 
 func TestIsEmpty(t *testing.T) {
-	assert.True(t, IsEmpty(""))
+	assert.True(t, helper.IsEmpty(""))
 }
 
 func TestIsBlank(t *testing.T) {
-	assert.True(t, IsBlank(""))
+	assert.True(t, helper.IsBlank(""))
 }
 
 func TestIsNotEmpty(t *testing.T) {
-	assert.False(t, IsNotEmpty(""))
+	assert.False(t, helper.IsNotEmpty(""))
 }
 
 func TestIsNotBlank(t *testing.T) {
-	assert.False(t, IsNotBlank(""))
+	assert.False(t, helper.IsNotBlank(""))
 }
