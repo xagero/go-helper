@@ -14,4 +14,6 @@ func main() {
 	fmt.Println(helper.IsNotBlank(" "))
 	fmt.Println(helper.IsNotBlank("Hello"))
 
+	fmt.Println(helper.IsFileExists("go.mod"))
+
 }
