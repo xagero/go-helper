@@ -1,9 +1,10 @@
 package test
 
 import (
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/xagero/go-helper/helper"
-	"testing"
 )
 
 func TestIsEmpty(t *testing.T) {
