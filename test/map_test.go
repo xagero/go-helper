@@ -50,3 +50,24 @@ func TestFetchValues(t *testing.T) {
 
 	assert.Equal(t, expectedValues, actual)
 }
+
+func TestFilterByFunc(t *testing.T) {
+
+	assertions := assert.New(t)
+
+	input := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	first := func(v int) bool {
+		return v < 5
+	}
+	second := func(v int) bool {
+		return v > 5
+	}
+	third := func(v int) bool {
+		return v == 5
+	}
+
+	assertions.Equal([]int{1, 2, 3, 4}, helper.FilterByFunc(input, first))
+	assertions.Equal([]int{6, 7, 8, 9}, helper.FilterByFunc(input, second))
+	assertions.Equal([]int{5}, helper.FilterByFunc(input, third))
+
+}
